@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="M4Y-Lb-cyx">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Net Activity View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController id="M4Y-Lb-cyx" customClass="NetActivityViewController" customModule="Network_Activity" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ft6-oW-KC0"/>
+                        <viewControllerLayoutGuide type="bottom" id="FKl-LY-JtV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3bS-ft-riT" customClass="LineChartView" customModule="Network_Activity" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="129"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZHP-Lu-eSd">
+                                <rect key="frame" x="0.0" y="129" width="320" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="0HC-aH-REF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oIw-l9-EMD" customClass="LineChartView" customModule="Network_Activity" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="150" width="320" height="129"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9sT-3A-ge7">
+                                <rect key="frame" x="0.0" y="279" width="320" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="NuV-20-DAe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="9sT-3A-ge7" secondAttribute="trailing" id="0rf-Ac-sjk"/>
+                            <constraint firstItem="oIw-l9-EMD" firstAttribute="height" secondItem="3bS-ft-riT" secondAttribute="height" id="D4P-kw-T5M"/>
+                            <constraint firstItem="3bS-ft-riT" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" id="Eu7-Ga-AOa"/>
+                            <constraint firstItem="ZHP-Lu-eSd" firstAttribute="top" secondItem="3bS-ft-riT" secondAttribute="bottom" id="Mmc-gi-ozs"/>
+                            <constraint firstItem="oIw-l9-EMD" firstAttribute="top" secondItem="ZHP-Lu-eSd" secondAttribute="bottom" id="VM6-FR-QXx"/>
+                            <constraint firstItem="9sT-3A-ge7" firstAttribute="top" secondItem="oIw-l9-EMD" secondAttribute="bottom" id="Wde-YA-Uha"/>
+                            <constraint firstItem="9sT-3A-ge7" firstAttribute="top" secondItem="oIw-l9-EMD" secondAttribute="bottom" id="WjR-gx-Iaf"/>
+                            <constraint firstItem="oIw-l9-EMD" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" id="Y4y-ze-vVv"/>
+                            <constraint firstAttribute="trailing" secondItem="3bS-ft-riT" secondAttribute="trailing" id="bVu-P4-kf1"/>
+                            <constraint firstAttribute="trailing" secondItem="ZHP-Lu-eSd" secondAttribute="trailing" id="btU-tF-wES"/>
+                            <constraint firstItem="ZHP-Lu-eSd" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" id="eQa-Zd-2UH"/>
+                            <constraint firstItem="3bS-ft-riT" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" id="g5c-l0-HsS"/>
+                            <constraint firstItem="ZHP-Lu-eSd" firstAttribute="top" secondItem="3bS-ft-riT" secondAttribute="bottom" id="geA-z5-IG9"/>
+                            <constraint firstItem="9sT-3A-ge7" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" id="hrr-SK-pdq"/>
+                            <constraint firstItem="oIw-l9-EMD" firstAttribute="top" secondItem="ZHP-Lu-eSd" secondAttribute="bottom" id="kWR-Sz-Xjb"/>
+                            <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="9sT-3A-ge7" secondAttribute="bottom" id="w5u-ML-iNq"/>
+                            <constraint firstAttribute="trailing" secondItem="oIw-l9-EMD" secondAttribute="trailing" id="xgN-ej-h8t"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="300"/>
+                    <connections>
+                        <outlet property="receivedChartView" destination="3bS-ft-riT" id="FxY-mZ-WFe"/>
+                        <outlet property="receivedLabel" destination="ZHP-Lu-eSd" id="vCA-di-GTF"/>
+                        <outlet property="sendChartView" destination="oIw-l9-EMD" id="DM0-LY-zDS"/>
+                        <outlet property="sendLabel" destination="9sT-3A-ge7" id="cYY-00-W4J"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="516" y="285"/>
+        </scene>
+    </scenes>
+</document>

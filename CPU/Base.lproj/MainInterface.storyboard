@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="4yC-QM-hPO">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="gPr-Gl-oOt">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="4yC-QM-hPO" customClass="CPUViewController" customModule="CPU" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Nq4-b9-80S"/>
+                        <viewControllerLayoutGuide type="bottom" id="Hwk-Ve-50U"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="REV-zF-bfR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UrP-9a-baA" customClass="CPUView" customModule="CPU" customModuleProvider="target">
+                                <rect key="frame" x="20" y="28" width="280" height="135"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="135" id="OKT-55-JFl"/>
+                                    <constraint firstAttribute="width" constant="280" id="r2U-2h-EGm"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Idle:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ffe-iU-apI">
+                                <rect key="frame" x="20" y="171" width="136" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="1" blue="0.57517999070000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Usage:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rtu-bf-i0d">
+                                <rect key="frame" x="164" y="171" width="136" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Hwk-Ve-50U" firstAttribute="top" secondItem="Rtu-bf-i0d" secondAttribute="bottom" constant="8" id="2fR-ea-G09"/>
+                            <constraint firstItem="Ffe-iU-apI" firstAttribute="leading" secondItem="REV-zF-bfR" secondAttribute="leading" constant="20" id="FEL-jZ-ubI"/>
+                            <constraint firstAttribute="trailing" secondItem="UrP-9a-baA" secondAttribute="trailing" constant="20" id="JTp-Yp-K9V"/>
+                            <constraint firstItem="Ffe-iU-apI" firstAttribute="top" secondItem="UrP-9a-baA" secondAttribute="bottom" constant="8" id="ecr-pm-BLk"/>
+                            <constraint firstItem="Rtu-bf-i0d" firstAttribute="width" secondItem="Ffe-iU-apI" secondAttribute="width" id="frp-JY-2fI"/>
+                            <constraint firstAttribute="trailing" secondItem="Rtu-bf-i0d" secondAttribute="trailing" constant="20" id="jIp-Eo-X9d"/>
+                            <constraint firstItem="UrP-9a-baA" firstAttribute="leading" secondItem="REV-zF-bfR" secondAttribute="leading" constant="20" id="npK-Ad-J26"/>
+                            <constraint firstItem="UrP-9a-baA" firstAttribute="top" secondItem="Nq4-b9-80S" secondAttribute="bottom" constant="8" id="ohS-Sp-7yA"/>
+                            <constraint firstItem="Hwk-Ve-50U" firstAttribute="top" secondItem="Ffe-iU-apI" secondAttribute="bottom" constant="8" id="tVC-8M-2a3"/>
+                            <constraint firstItem="Rtu-bf-i0d" firstAttribute="leading" secondItem="Ffe-iU-apI" secondAttribute="trailing" constant="8" id="tbL-N1-YxT"/>
+                            <constraint firstItem="Rtu-bf-i0d" firstAttribute="top" secondItem="UrP-9a-baA" secondAttribute="bottom" constant="8" id="wIO-Df-OOY"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="200"/>
+                    <connections>
+                        <outlet property="drawView" destination="UrP-9a-baA" id="BMC-Y2-Fng"/>
+                        <outlet property="idleLabel" destination="Ffe-iU-apI" id="eQO-tY-2Io"/>
+                        <outlet property="usageLabel" destination="Rtu-bf-i0d" id="zko-JF-rH2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="faK-QL-QGN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="215" y="202"/>
+        </scene>
+    </scenes>
+</document>

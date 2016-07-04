@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="SAM-my-IG8">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Storage View Controller-->
+        <scene sceneID="Bop-Uf-0CN">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="SAM-my-IG8" customClass="StorageViewController" customModule="Storage" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qgs-Hx-6aI"/>
+                        <viewControllerLayoutGuide type="bottom" id="f3k-oz-JRn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OxK-Ji-wFC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="229"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S7d-hu-2IF" customClass="StorageView" customModule="Storage" customModuleProvider="target">
+                                <rect key="frame" x="20" y="28" width="280" height="135"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="135" id="ZmA-AL-lJI"/>
+                                    <constraint firstAttribute="width" constant="280" id="h7E-5w-1rP"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="greenColor">
+                                        <color key="value" red="0.0" green="1" blue="0.57517999070000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vEF-mn-EKj">
+                                <rect key="frame" x="20" y="171" width="136" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="136" id="p4o-1f-7yg"/>
+                                    <constraint firstAttribute="height" constant="21" id="qg5-ru-vcf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TWG-LW-kFY">
+                                <rect key="frame" x="164" y="171" width="136" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="136" id="tzO-Uf-XtI"/>
+                                    <constraint firstAttribute="height" constant="21" id="u8R-Xh-qdt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="1" blue="0.57517999070000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FZF-zi-guR">
+                                <rect key="frame" x="20" y="200" width="280" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="KDU-b3-oI6"/>
+                                    <constraint firstAttribute="width" constant="280" id="gb3-Lg-cCF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FZF-zi-guR" firstAttribute="top" secondItem="TWG-LW-kFY" secondAttribute="bottom" constant="8" id="5uu-Uv-kP4"/>
+                            <constraint firstItem="S7d-hu-2IF" firstAttribute="top" secondItem="qgs-Hx-6aI" secondAttribute="bottom" constant="8" id="B6M-3e-aPb"/>
+                            <constraint firstItem="vEF-mn-EKj" firstAttribute="leading" secondItem="OxK-Ji-wFC" secondAttribute="leading" constant="20" id="HKS-dD-7eS"/>
+                            <constraint firstAttribute="trailing" secondItem="TWG-LW-kFY" secondAttribute="trailing" constant="20" id="Kmw-5m-DIA"/>
+                            <constraint firstItem="f3k-oz-JRn" firstAttribute="top" secondItem="FZF-zi-guR" secondAttribute="bottom" constant="8" id="Ku2-Kg-JCn"/>
+                            <constraint firstItem="FZF-zi-guR" firstAttribute="leading" secondItem="OxK-Ji-wFC" secondAttribute="leading" constant="20" id="boz-rT-iYt"/>
+                            <constraint firstItem="S7d-hu-2IF" firstAttribute="leading" secondItem="OxK-Ji-wFC" secondAttribute="leading" constant="20" id="euC-jT-11B"/>
+                            <constraint firstAttribute="trailing" secondItem="FZF-zi-guR" secondAttribute="trailing" constant="20" id="gqY-t7-QMv"/>
+                            <constraint firstAttribute="trailing" secondItem="S7d-hu-2IF" secondAttribute="trailing" constant="20" id="owS-KH-HxM"/>
+                            <constraint firstItem="FZF-zi-guR" firstAttribute="top" secondItem="vEF-mn-EKj" secondAttribute="bottom" constant="8" id="rsc-AF-RlB"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="229"/>
+                    <connections>
+                        <outlet property="freeLabel" destination="vEF-mn-EKj" id="MyS-d1-4cR"/>
+                        <outlet property="storageView" destination="S7d-hu-2IF" id="gUx-GW-SkX"/>
+                        <outlet property="totalLabel" destination="FZF-zi-guR" id="RB0-Ia-YLH"/>
+                        <outlet property="usedLabel" destination="TWG-LW-kFY" id="d8m-pO-mhx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YoG-Ll-6cM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="803" y="367"/>
+        </scene>
+    </scenes>
+</document>

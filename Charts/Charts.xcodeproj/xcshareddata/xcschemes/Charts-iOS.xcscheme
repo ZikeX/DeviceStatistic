@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A6F481F81C01E87B00B2BDF2"
-               BuildableName = "Device statistic.app"
-               BlueprintName = "Device statistic"
-               ReferencedContainer = "container:Device statistic.xcodeproj">
+               BlueprintIdentifier = "5BA8EC3F1A9D14DC00CE82E1"
+               BuildableName = "Charts.framework"
+               BlueprintName = "Charts-iOS"
+               ReferencedContainer = "container:Charts.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -26,36 +26,27 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      codeCoverageEnabled = "YES">
       <Testables>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A6F482101C01E87B00B2BDF2"
-               BuildableName = "Device statisticTests.xctest"
-               BlueprintName = "Device statisticTests"
-               ReferencedContainer = "container:Device statistic.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A6F4821B1C01E87B00B2BDF2"
-               BuildableName = "Device statisticUITests.xctest"
-               BlueprintName = "Device statisticUITests"
-               ReferencedContainer = "container:Device statistic.xcodeproj">
+               BlueprintIdentifier = "06AEE7A11BDC3F8B009875AE"
+               BuildableName = "ChartsTests.xctest"
+               BlueprintName = "ChartsTests"
+               ReferencedContainer = "container:Charts.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A6F481F81C01E87B00B2BDF2"
-            BuildableName = "Device statistic.app"
-            BlueprintName = "Device statistic"
-            ReferencedContainer = "container:Device statistic.xcodeproj">
+            BlueprintIdentifier = "5BA8EC3F1A9D14DC00CE82E1"
+            BuildableName = "Charts.framework"
+            BlueprintName = "Charts-iOS"
+            ReferencedContainer = "container:Charts.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -71,16 +62,22 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A6F481F81C01E87B00B2BDF2"
-            BuildableName = "Device statistic.app"
-            BlueprintName = "Device statistic"
-            ReferencedContainer = "container:Device statistic.xcodeproj">
+            BlueprintIdentifier = "5BA8EC3F1A9D14DC00CE82E1"
+            BuildableName = "Charts.framework"
+            BlueprintName = "Charts-iOS"
+            ReferencedContainer = "container:Charts.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
+      <EnvironmentVariables>
+         <EnvironmentVariable
+            key = "FB_REFERENCE_IMAGE_DIR"
+            value = "$(SOURCE_ROOT)/$(PROJECT_NAME)Tests/ReferenceImages"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+      </EnvironmentVariables>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -90,16 +87,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A6F481F81C01E87B00B2BDF2"
-            BuildableName = "Device statistic.app"
-            BlueprintName = "Device statistic"
-            ReferencedContainer = "container:Device statistic.xcodeproj">
+            BlueprintIdentifier = "5BA8EC3F1A9D14DC00CE82E1"
+            BuildableName = "Charts.framework"
+            BlueprintName = "Charts-iOS"
+            ReferencedContainer = "container:Charts.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Device statistic.xcodeproj">
+      location = "self:/Users/Alexsander/Desktop/Apple/Development/Device statistic group/Device Statistic/Device Statistic.xcodeproj">
    </FileRef>
 </Workspace>
